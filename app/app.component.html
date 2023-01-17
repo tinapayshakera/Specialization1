@@ -1,0 +1,20 @@
+<div>
+  <h1>{{title}}</h1>
+  <h2>Our First Angular Project</h2>
+  <br><br>
+</div>
+  <!-- <app-fourth></app-fourth>
+<app-third></app-third>
+<app-second (secondOutput)="receiveEvent()"></app-second>
+<app-first [firstInput]="numberValue"></app-first> -->
+  <!-- <input type="text" [(ngModel)]="inputValue">
+<br>
+<button [disabled]="isDisabled" (click)="sampleClick()">Sample</button>
+<button (click)="increaseValue()">Add</button> -->
+  <!-- <h2>Score: {{numberValue}}</h2>
+        <app-add (addOut)="receiveAdd()"></app-add>
+        <app-subtract (subtractOut)="receiveSubtract()"></app-subtract> -->
+  <div *ngFor="let student of studentsList">
+    <app-student [studentIn]="student"></app-student>
+
+  </div>
